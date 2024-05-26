@@ -28,7 +28,7 @@ function updateISSPosition() {
         .catch(error => console.error('Error:', error));
 }
 
-// Update the ISS position every half seconds
-setInterval(updateISSPosition, 500);
+// Update the ISS position every 10 seconds
+setInterval(updateISSPosition, 10000);
 
 
