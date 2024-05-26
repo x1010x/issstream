@@ -31,4 +31,6 @@ function updateISSPosition() {
 // Update the ISS position every 10 seconds
 setInterval(updateISSPosition, 10000);
 
+// Update the ISS position when the page loads
+updateISSPosition();
 
