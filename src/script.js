@@ -18,19 +18,18 @@ let issMarker = L.marker([0, 0], { icon: issIcon }).addTo(map);
 
 // Function to update the ISS position
 function updateISSPosition() {
-    fetch('https://api.wheretheiss.at/v1/satellites/25544')
+    fetch('http://api.open-notify.org/iss-now.json')
         .then(response => response.json())
         .then(data => {
-            const { latitude, longitude } = data;
+            const { latitude, longitude } = data.iss_position;
             issMarker.setLatLng([latitude, longitude]);
             map.panTo([latitude, longitude]);
         })
         .catch(error => console.error('Error:', error));
 }
 
-// Update the ISS position every 10 seconds
-setInterval(updateISSPosition, 10000);
+// Update the ISS position every 1 second
+setInterval(updateISSPosition, 1000);
 
 // Update the ISS position when the page loads
 updateISSPosition();
-
