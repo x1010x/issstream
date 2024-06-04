@@ -16,10 +16,9 @@ The application includes a list of cities from around the world, which are displ
 
 To run the ISS Tracker application locally, follow these steps:
 
-- Clone the repository: git clone https://github.com/your-repo/iss-tracker.git
-- Navigate to the project directory: cd iss-tracker
+- Clone the repository: git clone https://github.com/x1010x/issstream.git
+- Navigate to the project directory: cd issstream/
 - Open the index.html file in a web browser.
-- Alternatively, you can deploy the application to a web server and access it through a URL.
 
 # Contributing
 Contributions to the ISS Tracker application are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
